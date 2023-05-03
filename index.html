@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/libs/fa/all.min.js"></script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header-desktop">
+            <div class="header-top">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="" class="header-top__link">
+                            <img src="./src/images/header/location.svg" alt="pin">
+                            Москва
+                        </a>
+                        <div class="d-flex header-top__menu">
+                            <a href="" class="header-top__link">Бренды</a>
+                            <a href="./src/pages/delivery/" class="header-top__link">Доставка</a>
+                            <a href="" class="header-top__link">Возврат</a>
+                            <a href="" class="header-top__link">Документация</a>
+                            <a href="./src/pages/contacts/" class="header-top__link">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle">
+                <div class="container">
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="header-middle__logo">
+                            <img src="./src/images/header/logo.png" alt="" class="header-middle__logo-img">
+                        </a>
+                        <div class="d-flex align-items-center header-middle__common">
+                            <a href="./src/pages/catalog/" class="header-middle__catalog">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 18L14.5 18" stroke="#2F323A" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4.5 12L20.5 12" stroke="#2F323A" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4.5 6L10.5 6" stroke="#2F323A" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                Каталог
+                            </a>
+                            <form class="header-middle__form">
+                                <input type="text" placeholder="Поиск" class="header-middle__form-input">
+                                <button type="submit" class="header-middle__form-btn">
+                                    <img src="./src/images/header/search.png" alt="">
+                                </button>
+                            </form>
+                            <div class="header-middle__profile">
+                                <a href="" class="header-middle__profile-links" id="open-login-popup">
+                                    <img src="./src/images/header/user.png" alt=""
+                                        class="header-middle__profile-img"><br>
+                                    Профиль
+                                </a>
+                                <a href="" class="header-middle__profile-links">
+                                    <img src="./src/images/header/order.png" alt=""
+                                        class="header-middle__profile-img"><br>
+                                    Заказы
+                                </a>
+                                <a href="" class="header-middle__profile-links">
+                                    <img src="./src/images/header/cart.png" alt=""
+                                        class="header-middle__profile-img"><br>
+                                    Корзина
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <nav class="d-flex justify-content-between header-bottom__nav">
+                        <a href="" class="header-bottom__link">Акции</a>
+                        <a href="" class="header-bottom__link">Строительные материалы</a>
+                        <a href="" class="header-bottom__link">Керамическая плитка</a>
+                        <a href="" class="header-bottom__link">Краски</a>
+                        <a href="" class="header-bottom__link">Сантехника</a>
+                        <a href="" class="header-bottom__link">Напольные покрытия</a>
+                        <a href="" class="header-bottom__link">Инструменты</a>
+                        <a href="" class="header-bottom__link">Обои</a>
+                        <a href="" class="header-bottom__link">Окна</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header-mobile">
+            <div class="header-top">
+                <div class="container">
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <div class="burger-menu">
+                            <span class="burger-menu__line"> </span>
+                        </div>
+                        <a href="../../../" class="header-top__logo">
+                            <img src="../../images/header/logo.png" alt="" class="header-top__logo-img">
+                        </a>
+                        <a href="" class="header-top__profile-links">
+                            <img src="../../images/header/cart.png" alt="" class="header-top__profile-img"><br>
+                        </a>
+                        <form class="header-top__form">
+                            <input type="text" placeholder="Поиск" class="header-top__form-input">
+                            <button type="submit" class="header-top__form-btn">
+                                <img src="../../images/header/search.png" alt="">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <a href="">Акции</a>
+                <a href="">Строительные материалы</a>
+                <a href="">Керамическая плитка</a>
+                <a href="">Краски</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="home">
+            <div class="owl-carousel owl-theme owl-loaded" id="home-slider">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item">
+                            <div class="home-slide home-slide_first">
+                                <h2 class="home-slide__title">Специальные <br> предложения</h2>
+                                <p class="home-slide__text">на строительные материалы <br> и товары для ремонта</p>
+                                <a href="" class="home-slide__more-btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="home-slide home-slide_second">
+                                <h1 class="home-slide__title">Распродажа <br> инструментов</h1>
+                                <p class="home-slide__text">«СтройкаСтор» стремится сделать условия покупки максимально
+                                    выгодными для каждого покупателя, поэтому на сайте регулярно появляются товары со
+                                    скидкой</p>
+                                <a href="" class="home-slide__more-btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-nav">
+                    <div class="home__prev"><img src="./src/images/home/left.png" alt=""></div>
+                    <div class="home__next"><img src="./src/images/home/right.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section class="discount">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h2 class="discount__title">Акции</h2>
+                    <a href="" class="discount__Btn">Все акции</a>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="discount-card d-flex">
+                            <div class="discount-card__left">
+                                <div class="discount-card__amount">
+                                    -25%
+                                </div>
+                                <div class="discount-card__img">
+                                    <img src="./src/images/discount/Image1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="discount-card__right">
+                                <div class="discount-card__text">
+                                    Рубероид РКП-350 ТУ, размер материала 1 х 10 м (10м2, 1
+                                    рулон)
+                                    Сетка "Рабица" яч. 50х50/1,5х10 м-ОЦ Сетка "Рабица" яч. 50х50/1,5х10 м-ОЦ
+                                </div>
+                                <div class="discount-card__price">
+                                    449 ₽
+                                    <span class="discount-card__oldprice">499 ₽</span>
+                                </div>
+                                <a href="" class="discount-card__link">В корзину</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-6">
+                        <div class="discount-card d-flex">
+                            <div class="discount-card__left">
+                                <div class="discount-card__amount">
+                                    -25%
+                                </div>
+                                <div class="discount-card__img">
+                                    <img src="./src/images/discount/Image2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="discount-card__right">
+                                <div class="discount-card__text">
+                                    Пена монтажная ТЕХНОНИКОЛЬ MASTER 65 профессиональная всесезонная
+                                </div>
+                                <div class="discount-card__price">
+                                    495 ₽
+                                    <span class="discount-card__oldprice"> 660 ₽</span>
+                                </div>
+                                <a href="" class="discount-card__link">В корзину</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-6">
+                        <div class="discount-card d-flex">
+                            <div class="discount-card__left">
+                                <div class="discount-card__amount">
+                                    -25%
+                                </div>
+                                <div class="discount-card__img">
+                                    <img src="./src/images/discount/Image3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="discount-card__right">
+                                <div class="discount-card__text">
+                                    Сетка "Рабица" яч. 50х50/1,5х10 м-ОЦ
+                                </div>
+                                <div class="discount-card__price">
+                                    1499 ₽
+                                    <span class="discount-card__oldprice"> 1890 ₽</span>
+                                </div>
+                                <a href="" class="discount-card__link">В корзину</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-6">
+                        <div class="discount-card d-flex">
+                            <div class="discount-card__left">
+                                <div class="discount-card__amount">
+                                    -25%
+                                </div>
+                                <div class="discount-card__img">
+                                    <img src="./src/images/discount/Image4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="discount-card__right">
+                                <div class="discount-card__text">
+                                    Металлочерепица, цвет коричневый, 1.18 х 1.15 м
+                                </div>
+                                <div class="discount-card__price">
+                                    769 ₽
+                                    <span class="discount-card__oldprice"> 999 ₽</span>
+                                </div>
+                                <a href="" class="discount-card__link">В корзину</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="category">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h2 class="category__title">Популярные категории</h2>
+                    <a href="" class="category__Btn">Все категории</a>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-4">
+                        <div class="category__card">
+                            <h3 class="category__card-title">Душевые</h3>
+                            <img src="./src/images/category/card-1.png" alt="" class="category__card-img">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <div class="category__card">
+                            <h3 class="category__card-title">Душевые</h3>
+                            <img src="./src/images/category/card-1.png" alt="" class="category__card-img">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <div class="category__card">
+                            <h3 class="category__card-title">Душевые</h3>
+                            <img src="./src/images/category/card-1.png" alt="" class="category__card-img">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <div class="category__card">
+                            <h3 class="category__card-title">Душевые</h3>
+                            <img src="./src/images/category/card-1.png" alt="" class="category__card-img">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <div class="category__card">
+                            <h3 class="category__card-title">Душевые</h3>
+                            <img src="./src/images/category/card-1.png" alt="" class="category__card-img">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <div class="category__card">
+                            <h3 class="category__card-title">Душевые</h3>
+                            <img src="./src/images/category/card-1.png" alt="" class="category__card-img">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <div class="category__card">
+                            <h3 class="category__card-title">Душевые</h3>
+                            <img src="./src/images/category/card-1.png" alt="" class="category__card-img">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <div class="category__card">
+                            <h3 class="category__card-title">Душевые</h3>
+                            <img src="./src/images/category/card-1.png" alt="" class="category__card-img">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <div class="category__card">
+                            <h3 class="category__card-title">Душевые</h3>
+                            <img src="./src/images/category/card-1.png" alt="" class="category__card-img">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <div class="category__card">
+                            <h3 class="category__card-title">Душевые</h3>
+                            <img src="./src/images/category/card-1.png" alt="" class="category__card-img">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <div class="category__card">
+                            <h3 class="category__card-title">Душевые</h3>
+                            <img src="./src/images/category/card-1.png" alt="" class="category__card-img">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <div class="category__card">
+                            <h3 class="category__card-title">Душевые</h3>
+                            <img src="./src/images/category/card-1.png" alt="" class="category__card-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bestsellers" id="bestsellers">
+            <div class="container">
+                <h3>Популярные товары</h3>
+                <div class="row">
+
+                    <div class="col-3">
+                        <div class="bestsellers-card">
+                            <img src="./src/images/bestsellers/Image.png" alt="" class="bestsellers-card__img">
+                            <div class="bestsellers-card__bottom">
+                                <p class="bestsellers-card__title">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+                                <p class="bestsellers-card__price">899 ₽</p>
+                                <div class="bestsellers-card__btn">В корзину</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="bestsellers-card">
+                            <img src="./src/images/bestsellers/Image.png" alt="" class="bestsellers-card__img">
+                            <div class="bestsellers-card__bottom">
+                                <p class="bestsellers-card__title">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+                                <p class="bestsellers-card__price">899 ₽</p>
+                                <div class="bestsellers-card__btn">В корзину</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="bestsellers-card">
+                            <img src="./src/images/bestsellers/Image.png" alt="" class="bestsellers-card__img">
+                            <div class="bestsellers-card__bottom">
+                                <p class="bestsellers-card__title">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+                                <p class="bestsellers-card__price">899 ₽</p>
+                                <div class="bestsellers-card__btn">В корзину</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="bestsellers-card">
+                            <img src="./src/images/bestsellers/Image.png" alt="" class="bestsellers-card__img">
+                            <div class="bestsellers-card__bottom">
+                                <p class="bestsellers-card__title">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+                                <p class="bestsellers-card__price">899 ₽</p>
+                                <div class="bestsellers-card__btn">В корзину</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="bestsellers-card">
+                            <img src="./src/images/bestsellers/Image.png" alt="" class="bestsellers-card__img">
+                            <div class="bestsellers-card__bottom">
+                                <p class="bestsellers-card__title">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+                                <p class="bestsellers-card__price">899 ₽</p>
+                                <div class="bestsellers-card__btn">В корзину</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="bestsellers-card">
+                            <img src="./src/images/bestsellers/Image.png" alt="" class="bestsellers-card__img">
+                            <div class="bestsellers-card__bottom">
+                                <p class="bestsellers-card__title">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+                                <p class="bestsellers-card__price">899 ₽</p>
+                                <div class="bestsellers-card__btn">В корзину</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="bestsellers-card">
+                            <img src="./src/images/bestsellers/Image.png" alt="" class="bestsellers-card__img">
+                            <div class="bestsellers-card__bottom">
+                                <p class="bestsellers-card__title">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+                                <p class="bestsellers-card__price">899 ₽</p>
+                                <div class="bestsellers-card__btn">В корзину</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="bestsellers-card">
+                            <img src="./src/images/bestsellers/Image.png" alt="" class="bestsellers-card__img">
+                            <div class="bestsellers-card__bottom">
+                                <p class="bestsellers-card__title">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+                                <p class="bestsellers-card__price">899 ₽</p>
+                                <div class="bestsellers-card__btn">В корзину</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="brands">
+
+        </section>
+        <section class="feedback">
+            <div class="container">
+                <h3 class="feedback__title">Отзывы</h3>
+                <div class="owl-carousel owl-theme owl-loaded" id="feedback-slider">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <div class="owl-item">
+                                <div class="feedback-card">
+                                    <div class="feedback-card__top">
+                                        <div class="feedback-card__user">
+                                            <img src="./src/images/feedback/avatar.png" alt="" class="feedback-card__avatar">
+                                            <h3 class="feedback-card__user-name">Пётр</h3>
+                                        </div>
+                                        <img src="./src/images/feedback/trace.png" alt="" class="feedback-card__trace">
+                                    </div>
+                                    <p class="feedback-card__text">
+                                        Сегодня 10.03.2022 года, брал перфоратор в аренду в магазине по улице Дорожная. Продавец всё хорошо объяснил, показал и плюс остался бонус в ящике перфоратора это бур нужного мне диаметра, оставленным прежним арендатором. В общем повесил телевизор, где надо было просверлить 4 отверстия, всего за 100 ₽
+                                    </p>
+                                    <div class="feedback-card__date">
+                                        21 марта 2022 г.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="feedback-card">
+                                    <div class="feedback-card__top">
+                                        <div class="feedback-card__user">
+                                            <img src="./src/images/feedback/avatar.png" alt="" class="feedback-card__avatar">
+                                            <h3 class="feedback-card__user-name">Пётр</h3>
+                                        </div>
+                                        <img src="./src/images/feedback/trace.png" alt="" class="feedback-card__trace">
+                                    </div>
+                                    <p class="feedback-card__text">
+                                        Сегодня 10.03.2022 года, брал перфоратор в аренду в магазине по улице Дорожная. Продавец всё хорошо объяснил, показал и плюс остался бонус в ящике перфоратора это бур нужного мне диаметра, оставленным прежним арендатором. В общем повесил телевизор, где надо было просверлить 4 отверстия, всего за 100 ₽
+                                    </p>
+                                    <div class="feedback-card__date">
+                                        21 марта 2022 г.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="feedback-card">
+                                    <div class="feedback-card__top">
+                                        <div class="feedback-card__user">
+                                            <img src="./src/images/feedback/avatar.png" alt="" class="feedback-card__avatar">
+                                            <h3 class="feedback-card__user-name">Пётр</h3>
+                                        </div>
+                                        <img src="./src/images/feedback/trace.png" alt="" class="feedback-card__trace">
+                                    </div>
+                                    <p class="feedback-card__text">
+                                        Сегодня 10.03.2022 года, брал перфоратор в аренду в магазине по улице Дорожная. Продавец всё хорошо объяснил, показал и плюс остался бонус в ящике перфоратора это бур нужного мне диаметра, оставленным прежним арендатором. В общем повесил телевизор, где надо было просверлить 4 отверстия, всего за 100 ₽
+                                    </p>
+                                    <div class="feedback-card__date">
+                                        21 марта 2022 г.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="feedback-card">
+                                    <div class="feedback-card__top">
+                                        <div class="feedback-card__user">
+                                            <img src="./src/images/feedback/avatar.png" alt="" class="feedback-card__avatar">
+                                            <h3 class="feedback-card__user-name">Пётр</h3>
+                                        </div>
+                                        <img src="./src/images/feedback/trace.png" alt="" class="feedback-card__trace">
+                                    </div>
+                                    <p class="feedback-card__text">
+                                        Сегодня 10.03.2022 года, брал перфоратор в аренду в магазине по улице Дорожная. Продавец всё хорошо объяснил, показал и плюс остался бонус в ящике перфоратора это бур нужного мне диаметра, оставленным прежним арендатором. В общем повесил телевизор, где надо было просверлить 4 отверстия, всего за 100 ₽
+                                    </p>
+                                    <div class="feedback-card__date">
+                                        21 марта 2022 г.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="feedback-card">
+                                    <div class="feedback-card__top">
+                                        <div class="feedback-card__user">
+                                            <img src="./src/images/feedback/avatar.png" alt="" class="feedback-card__avatar">
+                                            <h3 class="feedback-card__user-name">Пётр</h3>
+                                        </div>
+                                        <img src="./src/images/feedback/trace.png" alt="" class="feedback-card__trace">
+                                    </div>
+                                    <p class="feedback-card__text">
+                                        Сегодня 10.03.2022 года, брал перфоратор в аренду в магазине по улице Дорожная. Продавец всё хорошо объяснил, показал и плюс остался бонус в ящике перфоратора это бур нужного мне диаметра, оставленным прежним арендатором. В общем повесил телевизор, где надо было просверлить 4 отверстия, всего за 100 ₽
+                                    </p>
+                                    <div class="feedback-card__date">
+                                        21 марта 2022 г.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="feedback-card">
+                                    <div class="feedback-card__top">
+                                        <div class="feedback-card__user">
+                                            <img src="./src/images/feedback/avatar.png" alt="" class="feedback-card__avatar">
+                                            <h3 class="feedback-card__user-name">Пётр</h3>
+                                        </div>
+                                        <img src="./src/images/feedback/trace.png" alt="" class="feedback-card__trace">
+                                    </div>
+                                    <p class="feedback-card__text">
+                                        Сегодня 10.03.2022 года, брал перфоратор в аренду в магазине по улице Дорожная. Продавец всё хорошо объяснил, показал и плюс остался бонус в ящике перфоратора это бур нужного мне диаметра, оставленным прежним арендатором. В общем повесил телевизор, где надо было просверлить 4 отверстия, всего за 100 ₽
+                                    </p>
+                                    <div class="feedback-card__date">
+                                        21 марта 2022 г.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="feedback-card">
+                                    <div class="feedback-card__top">
+                                        <div class="feedback-card__user">
+                                            <img src="./src/images/feedback/avatar.png" alt="" class="feedback-card__avatar">
+                                            <h3 class="feedback-card__user-name">Пётр</h3>
+                                        </div>
+                                        <img src="./src/images/feedback/trace.png" alt="" class="feedback-card__trace">
+                                    </div>
+                                    <p class="feedback-card__text">
+                                        Сегодня 10.03.2022 года, брал перфоратор в аренду в магазине по улице Дорожная. Продавец всё хорошо объяснил, показал и плюс остался бонус в ящике перфоратора это бур нужного мне диаметра, оставленным прежним арендатором. В общем повесил телевизор, где надо было просверлить 4 отверстия, всего за 100 ₽
+                                    </p>
+                                    <div class="feedback-card__date">
+                                        21 марта 2022 г.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="feedback-card">
+                                    <div class="feedback-card__top">
+                                        <div class="feedback-card__user">
+                                            <img src="./src/images/feedback/avatar.png" alt="" class="feedback-card__avatar">
+                                            <h3 class="feedback-card__user-name">Пётр</h3>
+                                        </div>
+                                        <img src="./src/images/feedback/trace.png" alt="" class="feedback-card__trace">
+                                    </div>
+                                    <p class="feedback-card__text">
+                                        Сегодня 10.03.2022 года, брал перфоратор в аренду в магазине по улице Дорожная. Продавец всё хорошо объяснил, показал и плюс остался бонус в ящике перфоратора это бур нужного мне диаметра, оставленным прежним арендатором. В общем повесил телевизор, где надо было просверлить 4 отверстия, всего за 100 ₽
+                                    </p>
+                                    <div class="feedback-card__date">
+                                        21 марта 2022 г.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-nav">
+                        <div class="feedback__prev"><img src="./src/images/home/left.png" alt=""></div>
+                        <div class="feedback__next"><img src="./src/images/home/right.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top-mail">
+                    <img src="./src/images/footer/logo.png" alt="" class="footer__top-logo"> <br>
+                    <a href="" class="footer__top-email">
+                        <img src="./src/images/footer/Icon1.png" alt="" class="footer__top-email-icon">
+                        info@stroykastore.ru
+                    </a> <br>
+                    <a href="" class="footer__top-email">
+                        <img src="./src/images/footer/Icon2.png" alt="" class="footer__top-email-icon">
+                        Москва, ул. Камушкина 10
+                    </a>
+                </div>
+
+                <nav class="nav">
+                    <div class="row">
+                        <div class="col-4">
+                            <a href="" class="footer__link">
+                                <p class="footer__link-text">Личный кабинет</p>
+                            </a>
+                            <a href="" class="footer__link">
+                                <p class="footer__link-text">Заказы</p>
+                            </a>
+                            <a href="" class="footer__link">
+                                <p class="footer__link-text">Избранное</p>
+                            </a>
+                            <a href="" class="footer__link">
+                                <p class="footer__link-text">Корзина</p>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="" class="footer__link">
+                                <p class="footer__link-text">Каталог</p>
+                            </a>
+                            <a href="" class="footer__link">
+                                <p class="footer__link-text">Акции</p>
+                            </a>
+                            <a href="" class="footer__link">
+                                <p class="footer__link-text">Бренды</p>
+                            </a>
+                            <a href="" class="footer__link">
+                                <p class="footer__link-text">Контакты</p>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="" class="footer__link">
+                                <p class="footer__link-text">Стать продавцом</p>
+                            </a>
+                            <a href="" class="footer__link">
+                                <p class="footer__link-text">Доставка</p>
+                            </a>
+                            <a href="" class="footer__link">
+                                <p class="footer__link-text">Возврат</p>
+                            </a>
+                            <a href="" class="footer__link">
+                                <p class="footer__link-text">Документация</p>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <hr>
+            <div class="footer__bottom">
+                <div class="d-flex justify-content-between align-items-center">
+                    <img src="./src/images/footer/text1.png" alt="" class="footer__bottom-img">
+                    <img src="./src/images/footer/visa-mir.png" alt="" class="footer__bottom-img">
+                    <img src="./src/images/footer/KRUGLOV-STUDIO.png" alt="" class="footer__bottom-img">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay">
+        <div class="login-popup">
+           <form> 
+            <header class="login-popup__come"> 
+                <h1>Вход</h1>
+            </header>
+        </form>
+            <button class="login-popup__reg">Создать учетную запись</button>
+            
+        </div>
+        <div class="reg-popup">
+            Регистрация
+        </div>
+        <div class="city-popup">
+
+        </div>
+        <div class="cart-alert">
+
+        </div>
+        <div class="error-popup">
+
+        </div>
+        <div class="order-alert">
+
+        </div>
+        <div class="popup-close-btn"></div>
+    </div>
+    <a href="#header" class="to-top-btn">Вверх</a>
+    <script src="./src/libs/jquery/jquery.js"></script>
+    <script src="./src/libs/owl/owl.carousel.min.js"></script>
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>

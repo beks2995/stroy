@@ -1,0 +1,41 @@
+.catalog{
+    &-tabs{
+        &__caption{
+            display: flex;
+            gap: 8px;
+        }
+        &__btn{
+            cursor: pointer;
+            padding: 8px 12px;
+            border: 1px solid #000;
+            &_active{
+                background: #FBE303;
+                border: none;
+            }
+        }
+        &__content{
+            display: none;
+            &_active{
+                display: block;
+            }
+        }
+    }
+    &-card{
+        &__list{
+         display: flex;
+         flex-direction: column;
+         gap: 12px;
+        }
+        &__items{
+            transition: 0.3s;
+            &:hover{
+                padding-left: 20px;
+               background: url('../images/right.png') left center/15px 10px no-repeat;
+            }
+        }
+        // &__items{
+        //     padding-left: 20px;
+        //     background: url(https://cdn-icons-png.flaticon.com/512/5610/5610944.png) left center/10px no-repeat;
+        // }
+    }
+}

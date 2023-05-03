@@ -1,0 +1,48 @@
+@mixin section_top{
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 130%;
+        /* or 44px */
+
+        display: flex;
+        align-items: center;
+
+        /* Text/2F323A */
+
+        color: #2F323A;
+    }
+
+    &__Btn {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 136%;
+        /* or 24px */
+
+
+        /* Text/171B24 */
+
+        color: #171B24;
+        background: #FFFFFF;
+        /* BG/D1D1D3 */
+
+        border: 1px solid #D1D1D3;
+        padding: 12px 24px;
+    }
+}
+@mixin card_title{
+    font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            color: #2F323A;
+            margin-bottom: 12px;
+            min-height: 72px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+}

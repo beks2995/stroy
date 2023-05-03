@@ -1,0 +1,26 @@
+.category{
+    @include section_top;
+    &__card{
+        background: #F6F6F6;
+        margin-bottom: 16px;
+        &-title{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 136%;
+            /* or 24px */
+            
+            text-align: center;
+            
+            /* Text/2F323A */
+            
+            color: #2F323A;
+            padding: 12px 12px 16px;
+            text-align: center;
+        }
+        &-img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

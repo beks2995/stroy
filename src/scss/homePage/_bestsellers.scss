@@ -1,0 +1,58 @@
+.bestsellers {
+    &-card {
+        background: #FFFFFF;
+        /* BG/E8E9EA */
+
+        border: 1px solid #E8E9EA;
+        margin-top: 16px;
+
+        &__img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &__bottom {
+            border-top: 1px solid #E8E9EA;
+            padding: 16px;
+        }
+
+        &__title {
+            @include card_title;
+
+        }
+
+        &__price {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 140%;
+            /* identical to box height, or 28px */
+
+
+            /* Text/171B24 */
+
+            color: #171B24;
+            margin-bottom: 16px;
+        }
+
+        &__btn {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 136%;
+            /* or 24px */
+
+
+            /* Text/171B24 */
+
+            color: #171B24;
+            display: inline-block;
+            padding: 12px;
+            background: #FCEC41;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+
+}
